@@ -16,6 +16,9 @@
 		D7DA0BF421ECAA6200AAC967 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA0BF321ECAA6200AAC967 /* FriendViewController.swift */; };
 		D7DA0BF621ECCD4100AAC967 /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA0BF521ECCD4100AAC967 /* TextTableViewCell.swift */; };
 		D7DA0BF821ECEED900AAC967 /* TimeFormatter_Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA0BF721ECEED900AAC967 /* TimeFormatter_Int.swift */; };
+		D7DA0BFA21ED081B00AAC967 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA0BF921ED081B00AAC967 /* Coordinator.swift */; };
+		D7DA0BFC21ED08C900AAC967 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA0BFB21ED08C900AAC967 /* MainCoordinator.swift */; };
+		D7DA0BFE21ED09A900AAC967 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA0BFD21ED09A900AAC967 /* Storyboarded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		D7DA0BF321ECAA6200AAC967 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		D7DA0BF521ECCD4100AAC967 /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
 		D7DA0BF721ECEED900AAC967 /* TimeFormatter_Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatter_Int.swift; sourceTree = "<group>"; };
+		D7DA0BF921ED081B00AAC967 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		D7DA0BFB21ED08C900AAC967 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		D7DA0BFD21ED09A900AAC967 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 			isa = PBXGroup;
 			children = (
 				D7DA0BDF21EC983B00AAC967 /* AppDelegate.swift */,
+				D7DA0BFB21ED08C900AAC967 /* MainCoordinator.swift */,
+				D7DA0BFD21ED09A900AAC967 /* Storyboarded.swift */,
+				D7DA0BF921ED081B00AAC967 /* Coordinator.swift */,
 				D7DA0BE121EC983B00AAC967 /* ViewController.swift */,
 				D7DA0BF321ECAA6200AAC967 /* FriendViewController.swift */,
 				D7DA0BE321EC983B00AAC967 /* Main.storyboard */,
@@ -148,11 +157,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7DA0BF421ECAA6200AAC967 /* FriendViewController.swift in Sources */,
+				D7DA0BFC21ED08C900AAC967 /* MainCoordinator.swift in Sources */,
 				D7DA0BF221ECA0AD00AAC967 /* Friend.swift in Sources */,
 				D7DA0BE221EC983B00AAC967 /* ViewController.swift in Sources */,
 				D7DA0BF821ECEED900AAC967 /* TimeFormatter_Int.swift in Sources */,
+				D7DA0BFE21ED09A900AAC967 /* Storyboarded.swift in Sources */,
 				D7DA0BE021EC983B00AAC967 /* AppDelegate.swift in Sources */,
 				D7DA0BF621ECCD4100AAC967 /* TextTableViewCell.swift in Sources */,
+				D7DA0BFA21ED081B00AAC967 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

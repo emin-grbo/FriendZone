@@ -8,8 +8,10 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
-  
+class ViewController: UITableViewController, Storyboarded {
+
+  weak var coordinator: MainCoordinator?
+
   var friends = [Friend]()
   var selectedFriend: Int? = nil
 
@@ -51,7 +53,8 @@ class ViewController: UITableViewController {
   
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    configureFriend(friend: friends[indexPath.row], position: indexPath.row)
+    selectedFriend = indexPath.row
+    coordinator?.configure(friend: friends[indexPath.row])
   }
   
   //------------------------------------------------------------------------
@@ -92,19 +95,10 @@ class ViewController: UITableViewController {
     saveData()
     tableView.reloadData()
     
-    configureFriend(friend: newFriend, position: friends.count - 1)
+    selectedFriend = friends.count - 1
+    coordinator?.configure(friend: newFriend)
   }
-  
-  
-  func configureFriend(friend: Friend, position: Int) {
-    guard let vc = storyboard?.instantiateViewController(withIdentifier: "FriendViewController") as? FriendViewController else {return}
-    
-    selectedFriend = position
-    vc.delegate = self
-    vc.friend = friend
-    
-    navigationController?.pushViewController(vc, animated: true)
-  }
+
   
   func update(friend: Friend) {
     guard let selectedFriend = selectedFriend else {return}
